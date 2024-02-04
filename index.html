@@ -13,7 +13,7 @@
     }
         
     header{
-        display: block;
+        display:block;
     }
 
     .top{
@@ -24,9 +24,10 @@
         padding: 20px;
         margin: 20px;
         z-index: auto;
+        background-color: #fff;
     }
 
-        .top .navi {
+    .top .navi {
         align-items: center;
         display: grid;
         grid-template-rows: auto;
@@ -151,11 +152,49 @@
         margin: 20px;
         padding: 35px;
     }
+
     footer {
-        background-color: #333;
-        padding: 10px;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    margin-top: auto;
+    }
+
+    .footer-content {
+    max-width: 1008px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .footer-links{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(3,1fr);
+        gap: 250px;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .footer-links ul {
+        list-style: none;
+        text-align: justify ;
+        margin-top: 30px;
+    }
+
+    .footer-links li {
+        margin-right: 20px;
+        padding-top: 20px;
+        padding-bottom: 2px;
+        font-size: 13px;
+    }
+
+    .footer-links li a{
+        text-decoration: none;
         color: #fff;
     }
+
     </style>
     </head>
     <body>
@@ -204,6 +243,37 @@
         </main>
 
         <footer>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <ul>
+                        <h3>Shop</h3>
+                        <li><a href="#">Women</a></li>
+                        <li><a href="#">Men</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Jewelry</a></li>
+                        <li><a href="#">Electronics</a></li>
+                        <li><a href="#">Sale</a></li>
+                    </ul>
+                    <div>
+                        <ul>
+                            <h3>Info</h3>
+                            <li><a href="#">Customer Service</a></li>
+                            <li><a href="#">Contact</a></li>
+                            <li><a href="#">Legal and Privacy</a></li>
+                            <li><a href="#">About us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul>
+                            <h3>Need Help?</h3>
+                            <li><a href="#">My Account</a></li>
+                            <li><a href="#">Shopping Cart</a></li>
+                            <li><a href="#">Checkout</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </footer>
     </body>
     </html>
